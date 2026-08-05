@@ -4,6 +4,9 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.CameraAlt
+import androidx.compose.material3.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
@@ -74,7 +77,7 @@ fun PurchaseEntryScreen(
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
             trailingIcon = {
                 IconButton(onClick = onScanRequested) {
-                    Icon(androidx.compose.material.icons.Icons.Filled.CameraAlt, contentDescription = "Scan barcode")
+                    Icon(Icons.Filled.CameraAlt, contentDescription = "Scan barcode")
                 }
             },
             modifier = Modifier.fillMaxWidth(), singleLine = true

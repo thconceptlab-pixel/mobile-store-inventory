@@ -3,6 +3,9 @@ package com.mobilestore.inventory.ui.components
 import androidx.compose.animation.animateContentSize
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.DateRange
+import androidx.compose.material3.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -104,7 +107,7 @@ fun DatePickerField(
         label = { Text(label) },
         trailingIcon = {
             IconButton(onClick = { showDialog = true }) {
-                Icon(androidx.compose.material.icons.Icons.Filled.DateRange, contentDescription = "Pick date")
+                Icon(Icons.Filled.DateRange, contentDescription = "Pick date")
             }
         },
         modifier = modifier.fillMaxWidth()
