@@ -74,7 +74,7 @@ fun PurchaseEntryScreen(
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
             trailingIcon = {
                 IconButton(onClick = onScanRequested) {
-                    Icon(androidx.compose.material.icons.Icons.Filled.QrCodeScanner, contentDescription = "Scan barcode")
+                    Icon(androidx.compose.material.icons.Icons.Filled.CameraAlt, contentDescription = "Scan barcode")
                 }
             },
             modifier = Modifier.fillMaxWidth(), singleLine = true

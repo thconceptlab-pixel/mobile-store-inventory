@@ -104,7 +104,7 @@ fun DatePickerField(
         label = { Text(label) },
         trailingIcon = {
             IconButton(onClick = { showDialog = true }) {
-                Icon(androidx.compose.material.icons.Icons.Filled.CalendarMonth, contentDescription = "Pick date")
+                Icon(androidx.compose.material.icons.Icons.Filled.DateRange, contentDescription = "Pick date")
             }
         },
         modifier = modifier.fillMaxWidth()

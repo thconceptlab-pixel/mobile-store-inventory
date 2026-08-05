@@ -38,6 +38,7 @@ import java.util.concurrent.Executors
  * Falls back gracefully: if the person denies camera permission, they can
  * still type the IMEI manually — this screen never blocks that path.
  */
+@OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
 @Composable
 fun BarcodeScannerScreen(
     onBarcodeDetected: (String) -> Unit,
